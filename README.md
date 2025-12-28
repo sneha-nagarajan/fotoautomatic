@@ -1,4 +1,4 @@
-best in dark room with no light behind you.
+best with dark background
 
 
 To run:
