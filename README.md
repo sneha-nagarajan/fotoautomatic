@@ -1,4 +1,5 @@
-best in dark room with no light behind you.
+Best in dark room with no light behind you.
+
 
 To run:
 
@@ -11,4 +12,5 @@ npm run dev
 click localhost link
 
 
-click to enter photobooth
+
+Click to enter photobooth
