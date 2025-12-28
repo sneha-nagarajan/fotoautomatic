@@ -19,3 +19,4 @@ click localhost link
 
 
 click to enter photobooth
+![Screenshot 2025-12-28 at 6 47 40 PM](https://github.com/user-attachments/assets/17c3804c-10f1-4419-9110-acc16713e2dc)
