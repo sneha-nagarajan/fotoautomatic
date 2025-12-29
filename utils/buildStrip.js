@@ -27,12 +27,9 @@ export default function buildStrip(images) {
         // luminance
         let lum = 0.299 * r + 0.587 * g + 0.114 * b;
         let x = lum / 255;
+        x -= 0.15;
 
         x = 0.5 + (x-0.5) * 0.88;
-
-        if (x > 0.25 && x < 0.75) {
-          x -= 0.08;
-        }
   
         // highlight roll-off (prevents blotches)
         if (x > 0.65) {
