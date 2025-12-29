@@ -8,6 +8,8 @@ in terminal:
 
 npm install
 
+note: if that give you an error: brew install npm
+
 npm run dev
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c69fcbf9-e5cd-471f-85c8-2f7b9ead3683" />
 
