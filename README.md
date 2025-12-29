@@ -1,4 +1,4 @@
-best with dark background
+best with plain white background (no light behind you)
 
 
 To run:
