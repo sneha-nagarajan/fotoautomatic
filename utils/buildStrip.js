@@ -27,10 +27,11 @@ export default function buildStrip(images) {
         // luminance
         let lum = 0.299 * r + 0.587 * g + 0.114 * b;
         let x = lum / 255;
-  
-        // 🟡 gentle midtone lift (brighten faces)
+
+        x = 0.5 + (x-0.5) * 0.88;
+
         if (x > 0.25 && x < 0.75) {
-          x += 0.04;
+          x -= 0.08;
         }
   
         // highlight roll-off (prevents blotches)
@@ -41,14 +42,14 @@ export default function buildStrip(images) {
         // film-like contrast curve
         x = x < 0.5
           ? Math.pow(x, 1.22)
-          : 1 - Math.pow(1 - x, 1.12);
+          : 1 - Math.pow(1 - x, 1.06);
   
         lum = x * 255;
   
         // 🌞 slightly warmer monochrome (still subtle)
-        d[p]     = lum + 8;  // red
-        d[p + 1] = lum + 4;  // green
-        d[p + 2] = lum - 4;  // blue
+        d[p]     = lum + 15;  // red
+        d[p + 1] = lum + 9;  // green
+        d[p + 2] = lum - 11;  // blue
       }
   
       ctx.putImageData(imageData, 0, y);
